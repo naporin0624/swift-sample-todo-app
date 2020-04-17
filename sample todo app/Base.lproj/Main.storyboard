@@ -56,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Controller-->
         <scene sceneID="s0L-5z-kk5">
             <objects>
-                <viewController id="TiE-Qq-sOf" sceneMemberID="viewController">
+                <viewController id="TiE-Qq-sOf" customClass="AddController" customModule="sample_todo_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gov-Vt-qNq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,12 +87,18 @@
                                 <rect key="frame" x="176" y="202" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="追加する"/>
+                                <connections>
+                                    <action selector="TodoAddButton:" destination="TiE-Qq-sOf" eventType="touchUpInside" id="vFQ-cr-Owk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="L1j-Tf-bva"/>
                     </view>
                     <navigationItem key="navigationItem" id="214-4Z-YeA"/>
+                    <connections>
+                        <outlet property="TodoTextField" destination="vjR-Tp-oWb" id="bhG-io-aVC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HfJ-OS-zNo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
